@@ -1,0 +1,17 @@
+How to build/run project:
+
+i. From the terminal, change directories into the folder with primes.go
+
+ii. go run primes.go -pathname="path to file" -M=# -N=# -C=#
+
+iii. Example: go run primes.go -pathname="funibaNumbers.dat" -M=1000 
+
+OR
+
+i. From the terminal, change directories into the folder with primes.go
+
+ii. go build primes.go
+
+iii. ./primes -pathname=”path to file” -M=#
+
+iii. Example: ./primes -pathname="funibaNumbers.dat" -M=1000 

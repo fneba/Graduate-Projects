@@ -1,0 +1,13 @@
+fneba@MacBook-Pro-71 Project_1 % go run primes.go -pathname="Numbers.dat" -M=1000 > SampleOutput1.txt 2>&1
+
+2024/03/02 14:30:22 INFO worker id=518 result="{countedPrimes:187 pathname:Numbers.dat start:262144 length:65536}" Job="{pathname:Numbers.dat start:262144 length:65536}"
+2024/03/02 14:30:22 INFO worker id=335 result="{countedPrimes:183 pathname:Numbers.dat start:327680 length:65536}" Job="{pathname:Numbers.dat start:327680 length:65536}"
+2024/03/02 14:30:22 INFO worker id=72 result="{countedPrimes:231 pathname:Numbers.dat start:0 length:65536}" Job="{pathname:Numbers.dat start:0 length:65536}"
+2024/03/02 14:30:22 INFO worker id=659 result="{countedPrimes:208 pathname:Numbers.dat start:196608 length:65536}" Job="{pathname:Numbers.dat start:196608 length:65536}"
+2024/03/02 14:30:22 INFO worker id=554 result="{countedPrimes:206 pathname:Numbers.dat start:65536 length:65536}" Job="{pathname:Numbers.dat start:65536 length:65536}"
+2024/03/02 14:30:22 INFO worker id=254 result="{countedPrimes:192 pathname:Numbers.dat start:131072 length:65536}" Job="{pathname:Numbers.dat start:131072 length:65536}"
+2024/03/02 14:30:22 INFO worker id=831 result="{countedPrimes:192 pathname:Numbers.dat start:393216 length:65536}" Job="{pathname:Numbers.dat start:393216 length:65536}"
+2024/03/02 14:30:22 INFO worker id=875 result="{countedPrimes:201 pathname:Numbers.dat start:458752 length:65536}" Job="{pathname:Numbers.dat start:458752 length:65536}"
+Total number of Primes: 1600
+Program runtime: 600.738292ms
+2024/03/02 14:30:23 INFO message "All workers completed"=1000
