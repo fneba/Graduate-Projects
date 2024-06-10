@@ -1,3 +1,10 @@
+This project is a GoLang multithreaded application to compute the number of prime integers stored in a binary file.
+My program takes in three command-line input parameters: pathname, M, N, and C. Here M, N, and C are integers 
+(both divisible by 8; units of bytes) and pathname (relative or absolute) is the pathname to an input binary 
+datafile (of 64-bit unsigned integers in little-endian byte order). Default values for M, N, and C are 1, 64KB 
+and 1KB respectively. 
+
+
 How to build/run project:
 
 i. From the terminal, change directories into the folder with primes.go
