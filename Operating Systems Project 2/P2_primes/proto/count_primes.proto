@@ -1,0 +1,60 @@
+syntax = "proto3";
+
+option go_package = "countprimes.com/P2_primes";
+
+package proto;
+
+// Define FileServer
+service FileServer {
+  // Define a method within your service
+  rpc GetFileSegment(GetFileSegmentRequest) returns (stream GetFileSegmentResponse) {}
+}
+
+// Define dispatcher
+service Dispatcher {
+  rpc GetJob(GetJobRequest) returns (GetJobResponse);
+}
+
+// Define Consolidator
+service Consolidator {
+  rpc PushPrimes(PushPrimesRequest) returns (PushPrimesResponse);
+} 
+
+// request for file segment
+message GetFileSegmentRequest {
+  string pathname = 1;
+  int64 start = 2;
+  int64 end = 3;
+  int64 chunkSize = 4;
+}
+
+// response to request for file segment; streams chunks to worker
+message GetFileSegmentResponse {
+  bytes chunk = 1;
+}
+
+// Worker will send this to dispatcher to get a job (no fill needed)
+message GetJobRequest {
+}
+
+// Dispatcher will send this to worker, this is the job
+message GetJobResponse {
+  string pathname = 1;
+  int64 start = 2;
+  int64 length = 3;
+}
+
+// Worker will send calculated prime count to the consolidator to add up
+message PushPrimesRequest {
+  int64 primes = 1;
+  string pathname = 2;
+  int64 start = 3;
+  int64 length = 4;
+}
+
+// Consolidator will send this to notify the request was received (no info will be sent back)
+message PushPrimesResponse {
+
+}
+
+

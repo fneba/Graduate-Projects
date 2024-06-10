@@ -1,0 +1,22 @@
+(base) fneba@MacBook-Pro-71 main % go run . -N 1024 > mainOutput.txt
+2024/05/05 23:10:46 consolidator listening at 127.0.0.1:50052
+2024/05/05 23:10:46 dispatcher listening at 127.0.0.1:50051
+2024/05/05 23:11:00 No jobs available, waiting for job...
+2024/05/05 23:11:00 Dispatching job: {pathname:/Users/fneba/Desktop/P2_primes/numbers.dat start:0 length:1024}
+2024/05/05 23:11:00 Queued job from 0 to 1024
+2024/05/05 23:11:00 All jobs queued, total: 1
+2024/05/05 23:11:00 Received 2 primes for job from 0 to 1024
+2024/05/05 23:11:00 Received and added 2 primes. Remaining jobs: 0
+2024/05/05 23:11:00 All jobs processed. Total primes: 2
+2024/05/05 23:11:00 elapsed time: 14.372338417s
+(base) fneba@MacBook-Pro-71 main % go run . -N 1024 > mainOutput.txt
+2024/05/05 23:12:07 dispatcher listening at 127.0.0.1:50051
+2024/05/05 23:12:07 consolidator listening at 127.0.0.1:50052
+2024/05/05 23:12:08 No jobs available, waiting for job...
+2024/05/05 23:12:08 Dispatching job: {pathname:/Users/fneba/Desktop/P2_primes/numbers.dat start:0 length:1024}
+2024/05/05 23:12:08 Queued job from 0 to 1024
+2024/05/05 23:12:08 All jobs queued, total: 1
+2024/05/05 23:12:08 Received 2 primes for job from 0 to 1024
+2024/05/05 23:12:08 Received and added 2 primes. Remaining jobs: 0
+2024/05/05 23:12:08 All jobs processed. Total primes: 2
+2024/05/05 23:12:08 elapsed time: 1.123265s

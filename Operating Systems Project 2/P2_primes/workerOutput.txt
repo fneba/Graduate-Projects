@@ -1,0 +1,13 @@
+(base) fneba@MacBook-Pro-71 workers % go run . -C 1024 > workerOutput.txt
+2024/05/05 23:11:00 Connected to dispat successfully
+2024/05/05 23:11:00 Connected to consol successfully
+2024/05/05 23:11:00 Connected to FS successfully
+2024/05/05 23:11:00 Received job: pathname:"/Users/fneba/Desktop/P2_primes/numbers.dat" length:1024
+2024/05/05 23:11:00 Getting stream for current job
+2024/05/05 23:11:00 Segment successfully retrieved, length: 1024
+2024/05/05 23:11:00 End of file segment stream reached.
+2024/05/05 23:11:00 All segments received, total length: 1024
+2024/05/05 23:11:00 Received full segment!
+2024/05/05 23:11:00 Full number of primes: 2
+2024/05/05 23:11:00 Successfully sent 2 primes to consolidator for segment starting at 0
+2024/05/05 23:11:00 Failed to get job from dispatcher: rpc error: code = Unavailable desc = error reading from server: read tcp 127.0.0.1:56592->127.0.0.1:50051: read: connection reset by peer

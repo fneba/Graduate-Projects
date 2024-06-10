@@ -1,0 +1,4 @@
+(base) fneba@MacBook-Pro-71 fileserver % go run . > fileserverOutput.txt
+2024/05/05 23:12:04 fileserver listening at 127.0.0.1:50053
+2024/05/05 23:12:08 Attempting to open file: /Users/fneba/Desktop/P2_primes/numbers.dat
+2024/05/05 23:12:08 File opened successfully: /Users/fneba/Desktop/P2_primes/numbers.dat
